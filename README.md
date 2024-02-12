@@ -5,7 +5,6 @@ Have a look at https://ohmyposh.dev/docs/installation/linux
 ```
 sudo su
 curl -s https://raw.githubusercontent.com/dingsoyr/oh-my-posh/main/install.sh | bash -s
-chown -R difi:difi .cache/oh-my-posh/
 ```
 # Manual installation
 ## Install
