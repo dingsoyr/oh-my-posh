@@ -6,16 +6,18 @@ To install Oh My Posh and put themes in spesified directory:
 ```
 sudo su
 curl -s https://ohmyposh.dev/install.sh | bash -s -- -t /home/difi/.cache/oh-my-posh
+chown -R difi:difi .cache/oh-my-posh/
 ```
 # Add nerd-font hack:
 ```
+sudo su
 cd /home/difi
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
-sudo mkdir /usr/local/share/fonts/Hack
-sudo unzip Hack.zip -d /usr/local/share/fonts/Hack/
-sudo apt install fontconfig
-sudo fc-cache -fv
-sudo rm -rf /home/difi/Hack.zip
+mkdir /usr/local/share/fonts/Hack
+unzip Hack.zip -d /usr/local/share/fonts/Hack/
+apt install fontconfig
+fc-cache -fv
+rm -rf /home/difi/Hack.zip
 ```
 
 # Add to prompt by adding to .bashrc
