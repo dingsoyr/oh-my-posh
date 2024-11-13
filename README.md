@@ -3,14 +3,12 @@ Have a look at https://ohmyposh.dev/docs/installation/linux
 
 # Automatic installation
 ```
-sudo su
 curl -s https://raw.githubusercontent.com/dingsoyr/oh-my-posh/main/install.sh | bash -s
 ```
 # Manual installation
 ## Install
 To install Oh My Posh and put themes in spesified directory:
 ```
-sudo su
 curl -s https://ohmyposh.dev/install.sh | bash -s -- -t /home/difi/.cache/oh-my-posh
 chown -R difi:difi .cache/oh-my-posh/
 ```
@@ -28,5 +26,6 @@ rm -rf /home/difi/Hack.zip
 
 # Add to prompt by adding to .bashrc
 ```
+export PATH=$PATH:/home/difi/.local/bin
 eval "$(oh-my-posh init bash --config https://raw.githubusercontent.com/dingsoyr/oh-my-posh/main/sture.omp.json)"
 ```
