@@ -7,7 +7,7 @@ echo ""
 
 echo "Installing Nerd fonts"
 cd /home/difi
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip
 sudo mkdir /usr/local/share/fonts/Hack
 sudo unzip Hack.zip -d /usr/local/share/fonts/Hack/
 sudo apt install fontconfig
